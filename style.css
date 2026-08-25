@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #101010;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 40px 20px;
+
+    animation: aparecer 1s ease;
+}
+
+h1 {
+    color: #ff4444;
+    font-size: 45px;
+    margin-bottom: 20px;
+
+    text-shadow: 0 0 15px #ff4444;
+}
+
+h2 {
+    color: #ff6666;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+p {
+    max-width: 700px;
+    margin: 15px auto;
+    color: #cccccc;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Lista */
+
+ul {
+    list-style: none;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+li {
+    background: #1d1d1d;
+    padding: 18px;
+    margin: 12px;
+    border-radius: 10px;
+
+    border-left: 4px solid #ff4444;
+
+    transition: 0.3s;
+}
+
+/* Efeito quando passa o mouse */
+
+li:hover {
+    transform: translateX(10px);
+    background: #292929;
+    box-shadow: 0 0 15px #ff4444;
+}
+
+/* Animação */
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* Celular */
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+}
